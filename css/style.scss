@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,900;1,700&display=swap');
+@import "../breakpoints.scss";
+
 
 *,
 html,body{
@@ -8,11 +10,114 @@ html,body{
 }
 
 body{
-    
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
+    transition: all 0.2s;
+    
 }
+
+.body{
+    transition: all 0.3s;
+}
+
+.show-menu{
+    background-color:#f6b52e;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+
+.body-style{
+    transform: translateY(7%) translateX(1%) rotateZ(21deg);
+    overflow: hidden ;
+    background-color: #fff;
+    filter: blur(2px);
+
+    @include media(">phone","<custom-view-2") {
+        transform: translateY(7%) translateX(1%) rotateZ(21deg);;
+    }
+
+
+    @include media(">phone","<custom-view-2") {
+        transform: translateY(11%) translateX(8%) rotateZ(24deg);
+    }
+}
+
+.show{
+    display: flex !important;
+}
+
+
+.close-btn{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 3%;
+    left: 2%;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    .bar{
+        display: block;
+        border: 3px solid #000;
+        border-radius: 60px;
+        background-color: #000;
+        width: 35px;
+        margin: 0.2rem 0;
+    }
+
+    .bar1{
+        transform: rotateZ(45deg);
+    }
+    
+    .bar2{
+        transform: rotateZ(-45deg) translateY(-9px) translateX(8px);
+    }
+    
+    .bar3{
+        display: none;
+        transform: rotateZ(20deg);
+    }
+}
+
+
+
+
+
+
+.mobile-menu{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 7%;
+    left: 1%;
+    transition: all 0.2s;
+
+    
+
+    .mobile-menu-item{
+        width: fit-content;
+        list-style: none;
+        margin: 2rem 0 ;
+        transition: 0.1s;
+
+        &:hover{
+            transform: scale(1.1);
+        }
+        a{
+            margin: 1rem 0;
+            padding: 1rem 0.5rem;
+            text-decoration: none;
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+    
+        }
+    }
+
+}
+
 
 main{
     min-height: 100vh;
@@ -36,14 +141,81 @@ header{
     padding: 0.8rem 0;
 
     .logo{
+        align-self: center;
         padding: 0.5rem 1rem;
 
         p{
             color: #f6b52e;
             font-style: italic;
             font-size: 25px;
-            text-shadow: 1px 1px 10px #ffc654;
+            animation: blink 20s 10s infinite normal;
+
+            @include media( "<phone" ) {
+                font-size: 20px;
+            }
+        
+            @include media( ">phone" , "<tablet" ) {
+                font-size: 22px;
+            }
         }
+    }
+
+
+    .menu-btn{
+        display: none;
+        flex-direction: column;
+        top: 3%;
+        left: 2%;
+        cursor: pointer;
+        padding: 0.5rem;
+        margin: 0 1rem;
+
+        &:hover{
+            .bar1{
+                transform: rotateZ(38deg) translateX(16px) translateY(-5px);
+                width: 20px;
+            }
+        
+            
+            .bar3{
+                transform: rotateZ(-39deg) translateX(15px) translateY(5px);
+                width: 20px;
+            }
+        }
+
+        @include media( "<phone" ) {
+            display: block;
+        }
+    
+        @include media( ">phone" , "<tablet" ) {
+            display: block;
+        }
+
+        .bar{
+            display: block;
+            border: 2.5px solid #fff;
+            border-radius: 60px;
+            background-color: #fff;
+            width: 35px;
+            margin: 0.4rem 0;
+            transition: 0.3s;
+        }
+
+        
+    }
+}
+
+@keyframes blink{
+    0%{
+        text-shadow: none;
+    }
+
+    50%{
+        text-shadow: 1px 1px 10px #ffc654;
+    }
+
+    100%{
+        text-shadow: none;
     }
 }
 
@@ -54,6 +226,14 @@ header{
     list-style: none;
     align-self: center;
     padding: 0 0.5rem;
+
+    @include media("<phone") {
+        display: none;
+    }
+
+    @include media(">phone","<tablet") {
+        display: none;
+    }
 
     .desktop-menu-item{
         // width: fit-content;
@@ -85,22 +265,28 @@ header{
     }
 }
 
-.mobile-menu{
-    display: none;
-}
 
 // Homepage
-
 .hero{
     padding: 5rem 3rem;
 
     .hero-text{
         font-size: 30px;
         text-align: center;
+
+        @include media( "<phone" ) {
+            font-size: 20px;
+        }
+    
+        @include media( ">phone" , "<tablet" ) {
+            font-size: 22px;
+        }
     }
 }
 
 .homepage{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
 
     .homepage-title{
@@ -117,26 +303,49 @@ header{
     margin: 1rem 0;
 
     ul{
+        display: flex;
+        flex-direction: column;
         list-style: none;
     }
 
     .new-stuff{
-        width: max-content;
+        width: auto;
+        max-width: 800px;
         padding: 1rem 0;
+        margin: 1rem 0;
         border-bottom: 1.3px solid #ffc654;
     }
 
     .new-stuff-details{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 800px;
 
         .title{
             font-size: 22px;
+
+            @include media( "<phone" ) {
+                font-size: 18px;
+            }
+        
+            @include media( ">phone" , "<tablet" ) {
+                font-size: 20px;
+            }
         }
 
         .description{
             width: 100%;
-            max-width: 800px;
             margin: 0.8rem;
             font-size: 18px;
+
+            @include media( "<phone" ) {
+                font-size: 15px;
+            }
+        
+            @include media( ">phone" , "<tablet" ) {
+                font-size: 17px;
+            }
         }
 
         a{
@@ -148,6 +357,15 @@ header{
             background-color: #000;
             transition: .2s all ease;
             padding: 0.2rem;
+            width: fit-content;
+
+            @include media( "<phone" ) {
+                font-size: 15px;
+            }
+        
+            @include media( ">phone" , "<tablet" ) {
+                font-size: 16px;
+            }
 
             &:hover{
                 color:#000;
@@ -163,22 +381,49 @@ header{
 .playlists_page{
     padding: 2rem 1rem;
 
+    @include media( "<phone" ) {
+        padding: 2rem 0.4rem;
+    }
+
+    @include media( ">phone" , "<custom-view-1" ) {
+        padding: 2rem 0.6rem;
+    }
+
     .playlists_page-title{
         width: 100%;
         max-width: 300px;
         font-size: 40px;
         color: #f6b52e;
         text-shadow: -4px -3px 0 #000;
+
+        @include media( "<phone" ) {
+            font-size: 26px;
+        }
+    
+        @include media( ">phone" , "<custom-view-1" ) {
+            font-size: 35px;
+        }
     }
 }
 
 .apple-music-playlists{
-    padding: 0.5rem;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
 
     ul{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
         list-style: none;
+
+        @include media( "<phone" ) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        @include media( ">phone" , "<custom-view-1" ) {
+            display: flex;
+            flex-wrap: wrap;
+        }
     }
 }
 
@@ -188,15 +433,36 @@ header{
     padding: 1rem 1rem;
     margin: 1rem ;
 
+    @include media( "<phone" ) {
+        padding: 1rem 0.3rem;
+        margin: 0.3rem;
+    }
+
+    @include media( ">phone" , "<custom-view-1" ) {
+        padding: 1rem 0.7rem;
+        margin: 0.5rem;
+    }
+
     .play-btn{
         img{
             max-width: 50px;
+
+            @include media( "<phone" ) {
+                max-width: 40px;
+            }
         }
     }
 
     .playlist-details{
         padding: 0 0.4rem;
         margin: auto 0.2rem;
+
+        .playlist-name{
+            @include media( "<phone" ) {
+                font-size: 17px;
+            }
+            
+        }
 
         .playist-owner{
             a{
@@ -218,6 +484,14 @@ header{
         color: #f6b52e;
         text-shadow: -4px -3px 0 #000;
         margin: 2rem 1rem;
+
+        @include media( "<phone" ) {
+            font-size: 25px;
+        }
+    
+        @include media( ">phone" , "<tablet" ) {
+            font-size: 30px;
+        }
     }
 }
 
@@ -226,17 +500,46 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr));
     grid-gap: 2rem;
     margin: 2rem 0;
+
+    @include media( "<phone" ) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include media( ">phone" , "<custom-view-1" ) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .team-member{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         margin: 1.5rem;
+
+        @include media( "<phone" ) {
+            flex-direction: column;
+            margin: 1rem 0.2rem;
+        }
+    
+        @include media( ">phone" , "<custom-view-1" ) {
+            flex-direction: column;
+            margin: 1rem;
+        }
     }
 
     .member-icon{
         padding: 0.5rem;
         img{
             max-width: 130px;
+
+            @include media( "<phone" ) {
+                max-width: 100px;
+            }
+        
+            @include media( ">phone" , "<custom-view-1" ) {
+                max-width: 100px;
+            }
         }
     }
 
@@ -289,6 +592,14 @@ header{
         text-shadow: -4px -3px 0 #000;
         text-align: center;
         margin: 2rem auto;
+
+        @include media( "<phone" ) {
+            font-size: 30px;
+        }
+    
+        @include media( ">phone" , "<tablet" ) {
+           font-size: 35px;
+        }
     }
 }
 
@@ -297,6 +608,14 @@ header{
         margin: auto;
         text-align: center;
         font-size: 20px;
+
+        @include media( "<phone" ) {
+            font-size: 15px;
+        }
+    
+        @include media( ">phone" , "<tablet" ) {
+           font-size: 17px;
+        }
     }
     
 }

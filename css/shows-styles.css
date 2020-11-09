@@ -1,0 +1,8 @@
+.body-style {
+  -webkit-transform: translateY(7%) translateX(1%) rotateZ(21deg);
+  transform: translateY(7%) translateX(19%) rotateZ(21deg);
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-filter: blur(2px);
+  filter: blur(2px);
+}

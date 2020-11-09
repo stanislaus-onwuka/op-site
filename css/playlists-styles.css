@@ -1,0 +1,27 @@
+/**
+*
+* Testing
+*
+**/
+.body-style {
+  -webkit-transform: translateY(7%) translateX(19%) rotateZ(21deg);
+          transform: translateY(7%) translateX(19%) rotateZ(21deg);
+  overflow: hidden;
+  background-color: #fff;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+@media (min-width: 361px) and (max-width: 869px) {
+  .body-style {
+    -webkit-transform: translateY(7%) translateX(1%) rotateZ(21deg);
+            transform: translateY(7%) translateX(1%) rotateZ(21deg);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 869px) {
+  .body-style {
+    -webkit-transform: translateY(14%) translateX(13%) rotateZ(24deg);
+            transform: translateY(14%) translateX(13%) rotateZ(24deg);
+  }
+}
