@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,900;1,700&display=swap");
+*,
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: 'Nunito', sans-serif;
+}
+
+main {
+  min-height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.979);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.397);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.397);
+  padding: 0.8rem 0;
+}
+
+.navigation .logo {
+  padding: 0.5rem 1rem;
+}
+
+.navigation .logo p {
+  color: #f6b52e;
+  font-style: italic;
+  font-size: 25px;
+  text-shadow: 1px 1px 10px #ffc654;
+}
+
+.desktop-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0 0.5rem;
+}
+
+.desktop-menu .desktop-menu-item {
+  margin: 0 1.8rem;
+}
+
+.desktop-menu .desktop-menu-item::after {
+  display: block;
+  content: "";
+  height: 2px;
+  background-color: #f6b52e;
+  width: 0;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.desktop-menu .desktop-menu-item:hover::after {
+  width: 100%;
+}
+
+.desktop-menu .desktop-menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 0.3rem 0.2rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hero {
+  padding: 5rem 3rem;
+}
+
+.hero .hero-text {
+  font-size: 30px;
+  text-align: center;
+}
+
+.homepage {
+  padding: 1rem;
+}
+
+.homepage .homepage-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  border-bottom: 3px solid #f6b52e;
+  font-size: 28px;
+  color: #f6b52e;
+  text-shadow: -3px -1px 0 #000;
+}
+
+.new-stuff-list {
+  margin: 1rem 0;
+}
+
+.new-stuff-list ul {
+  list-style: none;
+}
+
+.new-stuff-list .new-stuff {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 1rem 0;
+  border-bottom: 1.3px solid #ffc654;
+}
+
+.new-stuff-list .new-stuff-details .title {
+  font-size: 22px;
+}
+
+.new-stuff-list .new-stuff-details .description {
+  width: 100%;
+  max-width: 800px;
+  margin: 0.8rem;
+  font-size: 18px;
+}
+
+.new-stuff-list .new-stuff-details a {
+  font-weight: 400;
+  font-size: 17px;
+  text-decoration: none;
+  margin: 0 0.7rem;
+  color: #f6b52e;
+  background-color: #000;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
+  padding: 0.2rem;
+}
+
+.new-stuff-list .new-stuff-details a:hover {
+  color: #000;
+  background-color: #f6b52e;
+}
+
+.playlists_page {
+  padding: 2rem 1rem;
+}
+
+.playlists_page .playlists_page-title {
+  width: 100%;
+  max-width: 300px;
+  font-size: 40px;
+  color: #f6b52e;
+  text-shadow: -4px -3px 0 #000;
+}
+
+.apple-music-playlists {
+  padding: 0.5rem;
+}
+
+.apple-music-playlists ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1.5fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+  list-style: none;
+}
+
+.playlist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem 1rem;
+  margin: 1rem;
+}
+
+.playlist .play-btn img {
+  max-width: 50px;
+}
+
+.playlist .playlist-details {
+  padding: 0 0.4rem;
+  margin: auto 0.2rem;
+}
+
+.playlist .playlist-details .playist-owner a {
+  color: #ffb011;
+}
+
+.team_page {
+  padding: 1rem;
+}
+
+.team_page .team_page-title {
+  font-size: 40px;
+  color: #f6b52e;
+  text-shadow: -4px -3px 0 #000;
+  margin: 2rem 1rem;
+}
+
+.team {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1.5fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr));
+  grid-gap: 2rem;
+  margin: 2rem 0;
+}
+
+.team .team-member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 1.5rem;
+}
+
+.team .member-icon {
+  padding: 0.5rem;
+}
+
+.team .member-icon img {
+  max-width: 130px;
+}
+
+.team .team-member-details {
+  max-width: 350px;
+  margin: 0 0.5rem;
+}
+
+.team .team-member-info .name {
+  font-size: 20px;
+}
+
+.team .team-member-info p {
+  margin: 0.4rem 0;
+}
+
+.team .team-member-info p span {
+  font-weight: 700;
+}
+
+.team .team-member-socials {
+  margin: 0.6rem 0;
+}
+
+.team .team-member-socials .twitter-link,
+.team .team-member-socials .ig-link {
+  margin: 0 0.5rem;
+}
+
+.team .team-member-socials .twitter-link:hover img,
+.team .team-member-socials .ig-link:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.team .team-member-socials .twitter-link img,
+.team .team-member-socials .ig-link img {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 100%;
+  max-width: 30px;
+}
+
+.shows-page h2 {
+  font-size: 45px;
+  color: #f6b52e;
+  text-shadow: -4px -3px 0 #000;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.episodes-list p {
+  margin: auto;
+  text-align: center;
+  font-size: 20px;
+}
+
+footer {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  justify-self: flex-end;
+  padding: 1rem;
+  background-color: #000;
+  margin-top: 4rem;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
+}

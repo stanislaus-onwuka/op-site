@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,900;1,700&display=swap');
+
+*,
+html,body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+main{
+    min-height: 100vh;
+}
+
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+    // min-height: 500px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
+    background-color: rgba(0, 0, 0, 0.979);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.397);
+    padding: 0.8rem 0;
+
+    .logo{
+        padding: 0.5rem 1rem;
+
+        p{
+            color: #f6b52e;
+            font-style: italic;
+            font-size: 25px;
+            text-shadow: 1px 1px 10px #ffc654;
+        }
+    }
+}
+
+.desktop-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    align-self: center;
+    padding: 0 0.5rem;
+
+    .desktop-menu-item{
+        // width: fit-content;
+        margin: 0 1.8rem;
+
+        &::after{
+            display: block;
+            content: "";
+            height: 2px;
+            background-color: #f6b52e;
+            width: 0;
+            transition: 0.2s;
+        }
+
+        &:hover{
+            &::after{
+                width: 100%;
+            }
+        }
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            padding: 0.3rem 0.2rem;
+            margin: 0 0.2rem;
+            cursor: pointer;
+        }
+    }
+}
+
+.mobile-menu{
+    display: none;
+}
+
+// Homepage
+
+.hero{
+    padding: 5rem 3rem;
+
+    .hero-text{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+.homepage{
+    padding: 1rem;
+
+    .homepage-title{
+        width: fit-content;
+        padding: 0.5rem;
+        border-bottom: 3px solid #f6b52e;
+        font-size: 28px;
+        color: #f6b52e;
+        text-shadow: -3px -1px 0 #000;
+    }
+}
+
+.new-stuff-list{
+    margin: 1rem 0;
+
+    ul{
+        list-style: none;
+    }
+
+    .new-stuff{
+        width: max-content;
+        padding: 1rem 0;
+        border-bottom: 1.3px solid #ffc654;
+    }
+
+    .new-stuff-details{
+
+        .title{
+            font-size: 22px;
+        }
+
+        .description{
+            width: 100%;
+            max-width: 800px;
+            margin: 0.8rem;
+            font-size: 18px;
+        }
+
+        a{
+            font-weight: 400;
+            font-size: 17px;
+            text-decoration: none;
+            margin: 0 0.7rem;
+            color: #f6b52e;
+            background-color: #000;
+            transition: .2s all ease;
+            padding: 0.2rem;
+
+            &:hover{
+                color:#000;
+                background-color: #f6b52e;
+            }
+        }
+    }
+}
+
+
+// Playlists
+
+.playlists_page{
+    padding: 2rem 1rem;
+
+    .playlists_page-title{
+        width: 100%;
+        max-width: 300px;
+        font-size: 40px;
+        color: #f6b52e;
+        text-shadow: -4px -3px 0 #000;
+    }
+}
+
+.apple-music-playlists{
+    padding: 0.5rem;
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+        list-style: none;
+    }
+}
+
+.playlist{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem;
+    margin: 1rem ;
+
+    .play-btn{
+        img{
+            max-width: 50px;
+        }
+    }
+
+    .playlist-details{
+        padding: 0 0.4rem;
+        margin: auto 0.2rem;
+
+        .playist-owner{
+            a{
+                color: #ffb011;
+            }
+            
+        }
+    }
+}
+
+
+// Team
+
+.team_page{
+    padding: 1rem;
+
+    .team_page-title{
+        font-size: 40px;
+        color: #f6b52e;
+        text-shadow: -4px -3px 0 #000;
+        margin: 2rem 1rem;
+    }
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1.5fr));
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    .team-member{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 1.5rem;
+    }
+
+    .member-icon{
+        padding: 0.5rem;
+        img{
+            max-width: 130px;
+        }
+    }
+
+    .team-member-details{
+        max-width: 350px;
+        margin: 0 0.5rem;
+    }
+
+    .team-member-info{
+        .name{
+            font-size: 20px;
+        }
+        p{
+            margin: 0.4rem 0;
+            span{
+                font-weight: 700;
+            }
+            
+        }
+    }
+
+    .team-member-socials{
+        margin: 0.6rem 0;
+        .twitter-link,
+        .ig-link{
+            margin: 0 0.5rem;
+            
+
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+            img{
+                transition: all 0.2s;
+                width: 100%;
+                max-width: 30px;
+            }
+            
+        }
+    }
+}
+
+// Shows
+
+.shows-page{
+    h2{
+        font-size: 45px;
+        color: #f6b52e;
+        text-shadow: -4px -3px 0 #000;
+        text-align: center;
+        margin: 2rem auto;
+    }
+}
+
+.episodes-list{
+    p{
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+    }
+    
+}
+
+
+
+footer{
+    justify-content: flex-end;
+    justify-self: flex-end;
+    padding: 1rem;
+    background-color: #000;
+    margin-top: 4rem;
+    p{
+        color: #fff;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }
+}
