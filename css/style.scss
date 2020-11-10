@@ -13,19 +13,19 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Nunito', sans-serif;
-    transition: all 0.2s;
+    transition: all 1.5s;
     
 }
 
 .body{
-    transition: all 0.15s;
+    transition: all 1.5s;
     transform: translateZ(0);
 }
 
 .show-menu{
     background-color:#f6b52e;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 1.2s;
     position: fixed;
 }
 
@@ -49,6 +49,7 @@ body{
 
 .show{
     display: flex !important;
+    transition: all 1.2s;
 }
 
 
@@ -59,7 +60,7 @@ body{
     top: 3%;
     left: 2%;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 1.8s;
 
     .bar{
         display: block;
@@ -95,7 +96,7 @@ body{
     position: fixed;
     top: 7%;
     left: 1%;
-    transition: all 0.3s;
+    transition: all 1s;
 
     
 
@@ -103,7 +104,7 @@ body{
         width: fit-content;
         list-style: none;
         margin: 2rem 0 ;
-        transition: 0.1s;
+        transition: 1s;
 
         &:hover{
             transform: scale(1.1);
