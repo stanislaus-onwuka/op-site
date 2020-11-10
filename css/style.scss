@@ -18,18 +18,20 @@ body{
 }
 
 .body{
-    transition: all 0.2s;
+    transition: all 0.15s;
+    transform: translateZ(0);
 }
 
 .show-menu{
     background-color:#f6b52e;
     overflow: hidden;
     transition: all 0.2s;
+    max-height: 100vh;
 }
 
 
 .body-style{
-    transform: translateY(7%) translateX(1%) rotateZ(21deg);
+    transform: translateY(7%) translateZ(0) translateX(1%) rotateZ(21deg);
     overflow: hidden ;
     background-color: #fff;
     filter: blur(2px);
