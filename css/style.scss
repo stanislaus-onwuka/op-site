@@ -26,7 +26,6 @@ body{
     background-color:#f6b52e;
     overflow: hidden;
     transition: all 0.1s;
-    max-height: 600px;
 }
 
 
@@ -359,7 +358,7 @@ header{
             background-color: #000;
             transition: .2s all ease;
             padding: 0.2rem;
-            width: fit-content;
+            width: max-content;
 
             @include media( "<phone" ) {
                 font-size: 15px;

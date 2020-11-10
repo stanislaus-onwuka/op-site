@@ -29,6 +29,13 @@ window.addEventListener('resize', ()=>{
 })
 
 
+window.addEventListener('DOMContentLoaded', ()=>{
+    menu.classList.remove('show');
+    body.classList.remove('body-style');
+    document.querySelector('body').classList.remove('show-menu');
+    closeBtn.classList.remove('show');
+})
+
 
 
 

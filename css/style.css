@@ -37,7 +37,6 @@ body {
   overflow: hidden;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
-  max-height: 600px;
 }
 
 .body-style {
@@ -458,9 +457,9 @@ header {
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
   padding: 0.2rem;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 @media (max-width: 359px) {
