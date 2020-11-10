@@ -457,9 +457,8 @@ header {
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
   padding: 0.2rem;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100%;
+  max-width: 132px;
 }
 
 @media (max-width: 359px) {

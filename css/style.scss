@@ -358,7 +358,8 @@ header{
             background-color: #000;
             transition: .2s all ease;
             padding: 0.2rem;
-            width: max-content;
+            width: 100%;
+            max-width: 132px;
 
             @include media( "<phone" ) {
                 font-size: 15px;
