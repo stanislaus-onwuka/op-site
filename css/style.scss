@@ -25,7 +25,7 @@ body{
 .show-menu{
     background-color:#f6b52e;
     overflow: hidden;
-    transition: all 0.1s;
+    transition: all 0.3s;
     position: fixed;
 }
 
@@ -95,7 +95,7 @@ body{
     position: fixed;
     top: 7%;
     left: 1%;
-    transition: all 0.25s;
+    transition: all 0.3s;
 
     
 
@@ -146,12 +146,14 @@ header{
     .logo{
         align-self: center;
         padding: 0.5rem 1rem;
+        text-decoration: none;
 
         p{
             color: #f6b52e;
             font-style: italic;
             font-size: 25px;
-            animation: blink 20s 10s infinite normal;
+            animation: blink 3s 2s infinite normal;
+            
 
             @include media( "<phone" ) {
                 font-size: 20px;

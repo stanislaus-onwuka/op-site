@@ -35,8 +35,8 @@ body {
 .show-menu {
   background-color: #f6b52e;
   overflow: hidden;
-  -webkit-transition: all 0.1s;
-  transition: all 0.1s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   position: fixed;
 }
 
@@ -118,8 +118,8 @@ body {
   position: fixed;
   top: 7%;
   left: 1%;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .mobile-menu .mobile-menu-item {
@@ -187,14 +187,15 @@ header {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 0.5rem 1rem;
+  text-decoration: none;
 }
 
 .navigation .logo p {
   color: #f6b52e;
   font-style: italic;
   font-size: 25px;
-  -webkit-animation: blink 20s 10s infinite normal;
-          animation: blink 20s 10s infinite normal;
+  -webkit-animation: blink 3s 2s infinite normal;
+          animation: blink 3s 2s infinite normal;
 }
 
 @media (max-width: 359px) {
