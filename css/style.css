@@ -37,6 +37,7 @@ body {
   overflow: hidden;
   -webkit-transition: all 0.1s;
   transition: all 0.1s;
+  position: fixed;
 }
 
 .body-style {
@@ -46,6 +47,7 @@ body {
   background-color: #fff;
   -webkit-filter: blur(2px);
           filter: blur(2px);
+  position: fixed;
 }
 
 @media (min-width: 361px) and (max-width: 869px) {
@@ -116,8 +118,8 @@ body {
   position: fixed;
   top: 7%;
   left: 1%;
-  -webkit-transition: all 0.15s;
-  transition: all 0.15s;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
 }
 
 .mobile-menu .mobile-menu-item {

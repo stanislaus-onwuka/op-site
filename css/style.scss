@@ -26,6 +26,7 @@ body{
     background-color:#f6b52e;
     overflow: hidden;
     transition: all 0.1s;
+    position: fixed;
 }
 
 
@@ -34,6 +35,7 @@ body{
     overflow: hidden ;
     background-color: #fff;
     filter: blur(2px);
+    position: fixed;
 
     @include media(">phone","<custom-view-2") {
         transform: translateY(7%) translateX(1%) rotateZ(21deg);;
