@@ -345,7 +345,7 @@ header {
 }
 
 .hero .hero-text {
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -519,12 +519,14 @@ header {
   }
 }
 
-.apple-music-playlists {
+.apple-music-playlists,
+.spotify-music-playlists {
   padding: 1rem 0.5rem;
   margin: 1rem 0;
 }
 
-.apple-music-playlists ul {
+.apple-music-playlists ul,
+.spotify-music-playlists ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1.5fr))[auto-fit];
@@ -533,7 +535,8 @@ header {
 }
 
 @media (max-width: 359px) {
-  .apple-music-playlists ul {
+  .apple-music-playlists ul,
+  .spotify-music-playlists ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -543,7 +546,8 @@ header {
 }
 
 @media (min-width: 361px) and (max-width: 549px) {
-  .apple-music-playlists ul {
+  .apple-music-playlists ul,
+  .spotify-music-playlists ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
