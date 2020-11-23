@@ -556,6 +556,35 @@ header {
   }
 }
 
+.apple-music,
+.spotify-music {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.apple-music span,
+.spotify-music span {
+  padding: 0.2rem 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.playlist-icon {
+  width: 100%;
+  height: auto;
+  max-width: 38px;
+  padding: 0 0.2rem;
+  margin: 0 0.2rem;
+}
+
 .playlist {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -603,8 +632,12 @@ header {
   }
 }
 
-.playlist .playlist-details .playist-owner a {
+.apple-music-playlists .playist-owner a {
   color: #ffb011;
+}
+
+.spotify-music-playlists .playist-owner a {
+  color: #1DB954;
 }
 
 .team_page {

@@ -435,6 +435,26 @@ header{
     }
 }
 
+.apple-music,
+.spotify-music{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+
+    span{
+        padding: 0.2rem 0;
+        align-self: center;
+    }
+}
+
+.playlist-icon{
+    width: 100%;
+    height: auto;
+    max-width: 38px;
+    padding: 0 0.2rem;
+    margin: 0 0.2rem;
+}
+
 .playlist{
     display: flex;
     flex-direction: row;
@@ -472,14 +492,28 @@ header{
             
         }
 
-        .playist-owner{
-            a{
-                color: #ffb011;
-            }
-            
-        }
     }
 }
+
+.apple-music-playlists{
+    .playist-owner{
+        a{
+            color: #ffb011;
+        }
+        
+    }
+}
+
+
+.spotify-music-playlists{
+    .playist-owner{
+        a{
+            color:#1DB954;
+        }
+        
+    }
+}
+
 
 
 // Team
