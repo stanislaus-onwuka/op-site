@@ -31,20 +31,21 @@ body{
 
 
 .body-style{
-    transform: translateY(7%) translateZ(0) translateX(1%) rotateZ(21deg);
+    transform: translateX(27%) translateY(-12%) scale(0.47);
+    // transform: translateY(7%) translateZ(0) translateX(1%) rotateZ(21deg);
     overflow: hidden ;
     background-color: #fff;
     filter: blur(2px);
     position: fixed;
 
-    @include media(">phone","<custom-view-2") {
-        transform: translateY(7%) translateX(1%) rotateZ(21deg);;
-    }
+    // @include media(">phone","<custom-view-2") {
+    //     transform: translateY(7%) translateX(1%) rotateZ(21deg);;
+    // }
 
 
-    @include media(">phone","<custom-view-2") {
-        transform: translateY(11%) translateX(8%) rotateZ(24deg);
-    }
+    // @include media(">phone","<custom-view-2") {
+    //     transform: translateY(11%) translateX(8%) rotateZ(24deg);
+    // }
 }
 
 .show{

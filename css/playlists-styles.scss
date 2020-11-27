@@ -1,19 +1,19 @@
-@import "../breakpoints.scss";
+// @import "../breakpoints.scss";
 
-.body-style {
-    transform: translateY(7%) translateX(19%) rotateZ(21deg);
-    overflow: hidden;
-    background-color: #fff;
-    filter: blur(2px);
+// .body-style {
+//     transform: translateY(7%) translateX(19%) rotateZ(21deg);
+//     overflow: hidden;
+//     background-color: #fff;
+//     filter: blur(2px);
 
-    @include media(">phone","<custom-view-2") {
-        transform: translateY(7%) translateX(1%) rotateZ(21deg);;
-    }
-
-
-    @include media(">phone","<custom-view-2") {
-        transform: translateY(14%) translateX(13%) rotateZ(24deg);
-    }
+//     @include media(">phone","<custom-view-2") {
+//         transform: translateY(7%) translateX(1%) rotateZ(21deg);;
+//     }
 
 
-}
+//     @include media(">phone","<custom-view-2") {
+//         transform: translateY(14%) translateX(13%) rotateZ(24deg);
+//     }
+
+
+// }

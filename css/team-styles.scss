@@ -1,38 +1,27 @@
-.body-style {
-    transform: translateY(1%) translateX(-61%) rotateZ(21deg);
-    overflow: hidden;
-    background-color: #fff;
-    filter: blur(2px);
-}
+// @import "../breakpoints.scss";
+
+// .body-style{
+//     transform: unset;
+// }
+
+// .body-style {
+//     transform: translateY(7%) translateX(19%) rotateZ(21deg);
+//     overflow: hidden;
+//     background-color: #fff;
+//     filter: blur(2px);
+
+//     @include media(">phone") {
+//         transform: translateY(-10%) translateX(-60%) rotateZ(12deg);
+//     }
+
+//     @include media(">phone","<tablet") {
+//         transform: translateY(0%) translateX(-20%) rotateZ(18deg);
+//     }
 
 
+//     @include media(">tablet","<custom-view-2") {
+//         transform: translateY(4%) translateX(-1%) rotateZ(21deg);
+//     }
 
 
-
-@import "../breakpoints.scss";
-
-.body-style{
-    transform: unset;
-}
-
-.body-style {
-    transform: translateY(7%) translateX(19%) rotateZ(21deg);
-    overflow: hidden;
-    background-color: #fff;
-    filter: blur(2px);
-
-    @include media(">phone") {
-        transform: translateY(-10%) translateX(-60%) rotateZ(12deg);
-    }
-
-    @include media(">phone","<tablet") {
-        transform: translateY(0%) translateX(-20%) rotateZ(18deg);
-    }
-
-
-    @include media(">tablet","<custom-view-2") {
-        transform: translateY(4%) translateX(-1%) rotateZ(21deg);
-    }
-
-
-}
+// }

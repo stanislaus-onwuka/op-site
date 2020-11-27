@@ -41,27 +41,13 @@ body {
 }
 
 .body-style {
-  -webkit-transform: translateY(7%) translateZ(0) translateX(1%) rotateZ(21deg);
-          transform: translateY(7%) translateZ(0) translateX(1%) rotateZ(21deg);
+  -webkit-transform: translateX(27%) translateY(-12%) scale(0.47);
+          transform: translateX(27%) translateY(-12%) scale(0.47);
   overflow: hidden;
   background-color: #fff;
   -webkit-filter: blur(2px);
           filter: blur(2px);
   position: fixed;
-}
-
-@media (min-width: 361px) and (max-width: 869px) {
-  .body-style {
-    -webkit-transform: translateY(7%) translateX(1%) rotateZ(21deg);
-            transform: translateY(7%) translateX(1%) rotateZ(21deg);
-  }
-}
-
-@media (min-width: 361px) and (max-width: 869px) {
-  .body-style {
-    -webkit-transform: translateY(11%) translateX(8%) rotateZ(24deg);
-            transform: translateY(11%) translateX(8%) rotateZ(24deg);
-  }
 }
 
 .show {
