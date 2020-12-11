@@ -182,11 +182,11 @@ header{
                 max-width: 35px;
 
                 @include media( "<phone" ) {
-                    max-width: 30px;
+                    max-width: 27px;
                 }
             
                 @include media( ">phone" , "<tablet" ) {
-                    max-width: 32px;
+                    max-width: 30px;
                 }
             }
         }

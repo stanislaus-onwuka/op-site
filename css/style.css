@@ -229,13 +229,13 @@ header {
 
 @media (max-width: 359px) {
   .navigation .logo p .santa-o {
-    max-width: 30px;
+    max-width: 27px;
   }
 }
 
 @media (min-width: 361px) and (max-width: 767px) {
   .navigation .logo p .santa-o {
-    max-width: 32px;
+    max-width: 30px;
   }
 }
 
