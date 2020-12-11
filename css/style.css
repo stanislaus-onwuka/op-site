@@ -50,6 +50,20 @@ body {
   position: fixed;
 }
 
+@media (min-width: 361px) and (max-width: 869px) {
+  .body-style {
+    -webkit-transform: translateX(27%) translateY(-12%) scale(0.47);
+            transform: translateX(27%) translateY(-12%) scale(0.47);
+  }
+}
+
+@media (min-width: 361px) and (max-width: 869px) {
+  .body-style {
+    -webkit-transform: translateX(48%) translateY(-12%) scale(0.47);
+            transform: translateX(48%) translateY(-12%) scale(0.47);
+  }
+}
+
 .show {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -179,6 +193,15 @@ header {
 }
 
 .navigation .logo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: center;
+      align-content: center;
   color: #f6b52e;
   font-style: italic;
   font-size: 25px;
@@ -195,6 +218,24 @@ header {
 @media (min-width: 361px) and (max-width: 767px) {
   .navigation .logo p {
     font-size: 22px;
+  }
+}
+
+.navigation .logo p .santa-o {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  max-width: 35px;
+}
+
+@media (max-width: 359px) {
+  .navigation .logo p .santa-o {
+    max-width: 30px;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 767px) {
+  .navigation .logo p .santa-o {
+    max-width: 32px;
   }
 }
 

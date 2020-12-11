@@ -38,6 +38,15 @@ body{
     filter: blur(2px);
     position: fixed;
 
+    @include media(">phone","<custom-view-2") {
+        transform: translateX(27%) translateY(-12%) scale(0.47);
+    }
+
+
+    @include media(">phone","<custom-view-2") {
+        transform: translateX(48%) translateY(-12%) scale(0.47);
+    }
+
     // @include media(">phone","<custom-view-2") {
     //     transform: translateY(7%) translateX(1%) rotateZ(21deg);;
     // }
@@ -151,6 +160,9 @@ header{
         text-decoration: none;
 
         p{
+            display: flex;
+            flex-direction: row;
+            align-content: center;
             color: #f6b52e;
             font-style: italic;
             font-size: 25px;
@@ -163,6 +175,19 @@ header{
         
             @include media( ">phone" , "<tablet" ) {
                 font-size: 22px;
+            }
+
+            .santa-o{
+                align-self: flex-end;
+                max-width: 35px;
+
+                @include media( "<phone" ) {
+                    max-width: 30px;
+                }
+            
+                @include media( ">phone" , "<tablet" ) {
+                    max-width: 32px;
+                }
             }
         }
     }
