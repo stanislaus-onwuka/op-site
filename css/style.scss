@@ -133,9 +133,9 @@ body{
 }
 
 
-main{
-    min-height: 100vh;
-}
+// main{
+//     min-height: 100vh;
+// }
 
 
 header{
@@ -169,11 +169,11 @@ header{
             animation: blink 3s 2s infinite normal;
             
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 font-size: 20px;
             }
         
-            @include media( ">phone" , "<tablet" ) {
+            @include media( ">phone" , "<custom-view-3" ) {
                 font-size: 22px;
             }
 
@@ -181,11 +181,11 @@ header{
                 align-self: flex-end;
                 max-width: 35px;
 
-                @include media( "<phone" ) {
+                @include media( "<=phone" ) {
                     max-width: 27px;
                 }
             
-                @include media( ">phone" , "<tablet" ) {
+                @include media( ">phone" , "<custom-view-3" ) {
                     max-width: 30px;
                 }
             }
@@ -215,11 +215,11 @@ header{
             }
         }
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             display: block;
         }
     
-        @include media( ">phone" , "<tablet" ) {
+        @include media( ">phone" , "<custom-view-3" ) {
             display: block;
         }
 
@@ -259,11 +259,11 @@ header{
     align-self: center;
     padding: 0 0.5rem;
 
-    @include media("<phone") {
+    @include media("<=phone") {
         display: none;
     }
 
-    @include media(">phone","<tablet") {
+    @include media(">phone","<custom-view-3") {
         display: none;
     }
 
@@ -306,11 +306,11 @@ header{
         font-size: 28px;
         text-align: center;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             font-size: 20px;
         }
     
-        @include media( ">phone" , "<tablet" ) {
+        @include media( ">phone" , "<custom-view-3" ) {
             font-size: 22px;
         }
     }
@@ -357,11 +357,11 @@ header{
         .title{
             font-size: 22px;
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 font-size: 18px;
             }
         
-            @include media( ">phone" , "<tablet" ) {
+            @include media( ">phone" , "<custom-view-3" ) {
                 font-size: 20px;
             }
         }
@@ -371,11 +371,11 @@ header{
             margin: 0.8rem;
             font-size: 18px;
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 font-size: 15px;
             }
         
-            @include media( ">phone" , "<tablet" ) {
+            @include media( ">phone" , "<custom-view-3" ) {
                 font-size: 17px;
             }
         }
@@ -392,11 +392,11 @@ header{
             width: 100%;
             max-width: 132px;
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 font-size: 15px;
             }
         
-            @include media( ">phone" , "<tablet" ) {
+            @include media( ">phone" , "<custom-view-3" ) {
                 font-size: 16px;
             }
 
@@ -414,11 +414,11 @@ header{
 .playlists_page{
     padding: 2rem 1rem;
 
-    @include media( "<phone" ) {
+    @include media( "<=phone" ) {
         padding: 2rem 0.4rem;
     }
 
-    @include media( ">phone" , "<custom-view-1" ) {
+    @include media( ">phone" , "<=custom-view-1" ) {
         padding: 2rem 0.6rem;
     }
 
@@ -429,11 +429,11 @@ header{
         color: #f6b52e;
         text-shadow: -4px -3px 0 #000;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone") {
             font-size: 26px;
         }
     
-        @include media( ">phone" , "<custom-view-1" ) {
+        @include media( ">phone" , "<=custom-view-1" ) {
             font-size: 35px;
         }
     }
@@ -449,12 +449,12 @@ header{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
         list-style: none;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             display: flex;
             flex-wrap: wrap;
         }
     
-        @include media( ">phone" , "<custom-view-1" ) {
+        @include media( ">phone" , "<=custom-view-1" ) {
             display: flex;
             flex-wrap: wrap;
         }
@@ -487,12 +487,12 @@ header{
     padding: 1rem 1rem;
     margin: 1rem ;
 
-    @include media( "<phone" ) {
+    @include media( "<=phone" ) {
         padding: 1rem 0.3rem;
         margin: 0.3rem;
     }
 
-    @include media( ">phone" , "<custom-view-1" ) {
+    @include media( ">phone" , "<=custom-view-1" ) {
         padding: 1rem 0.7rem;
         margin: 0.5rem;
     }
@@ -501,7 +501,7 @@ header{
         img{
             max-width: 50px;
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 max-width: 40px;
             }
         }
@@ -512,7 +512,7 @@ header{
         margin: auto 0.2rem;
 
         .playlist-name{
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 font-size: 17px;
             }
             
@@ -553,11 +553,11 @@ header{
         text-shadow: -4px -3px 0 #000;
         margin: 2rem 1rem;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             font-size: 25px;
         }
     
-        @include media( ">phone" , "<tablet" ) {
+        @include media( ">phone" , "<custom-view-3" ) {
             font-size: 30px;
         }
     }
@@ -569,12 +569,12 @@ header{
     grid-gap: 2rem;
     margin: 2rem 0;
 
-    @include media( "<phone" ) {
+    @include media( "<=phone" ) {
         display: flex;
         flex-wrap: wrap;
     }
 
-    @include media( ">phone" , "<custom-view-1" ) {
+    @include media( ">phone" , "<=custom-view-1" ) {
         display: flex;
         flex-wrap: wrap;
     }
@@ -585,12 +585,12 @@ header{
         justify-content: space-evenly;
         margin: 1.5rem;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             flex-direction: column;
             margin: 1rem 0.2rem;
         }
     
-        @include media( ">phone" , "<custom-view-1" ) {
+        @include media( ">phone" , "<=custom-view-1" ) {
             flex-direction: column;
             margin: 1rem;
         }
@@ -601,11 +601,11 @@ header{
         img{
             max-width: 130px;
 
-            @include media( "<phone" ) {
+            @include media( "<=phone" ) {
                 max-width: 100px;
             }
         
-            @include media( ">phone" , "<custom-view-1" ) {
+            @include media( ">phone" , "<=custom-view-1" ) {
                 max-width: 100px;
             }
         }
@@ -661,11 +661,11 @@ header{
         text-align: center;
         margin: 2rem auto;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             font-size: 30px;
         }
     
-        @include media( ">phone" , "<tablet" ) {
+        @include media( ">phone" , "<custom-view-3" ) {
            font-size: 35px;
         }
     }
@@ -675,11 +675,11 @@ header{
         text-align: center;
         font-size: 20px;
 
-        @include media( "<phone" ) {
+        @include media( "<=phone" ) {
             font-size: 16px;
         }
     
-        @include media( ">phone" , "<tablet" ) {
+        @include media( ">phone" , "<custom-view-3" ) {
            font-size: 18px;
         }
 

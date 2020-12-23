@@ -50,14 +50,14 @@ body {
   position: fixed;
 }
 
-@media (min-width: 361px) and (max-width: 869px) {
+@media (min-width: 360.5px) and (max-width: 869.5px) {
   .body-style {
     -webkit-transform: translateX(27%) translateY(-12%) scale(0.47);
             transform: translateX(27%) translateY(-12%) scale(0.47);
   }
 }
 
-@media (min-width: 361px) and (max-width: 869px) {
+@media (min-width: 360.5px) and (max-width: 869.5px) {
   .body-style {
     -webkit-transform: translateX(48%) translateY(-12%) scale(0.47);
             transform: translateX(48%) translateY(-12%) scale(0.47);
@@ -148,10 +148,6 @@ body {
   font-weight: 700;
 }
 
-main {
-  min-height: 100vh;
-}
-
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,13 +205,13 @@ header {
           animation: blink 3s 2s infinite normal;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .navigation .logo p {
     font-size: 20px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .navigation .logo p {
     font-size: 22px;
   }
@@ -227,13 +223,13 @@ header {
   max-width: 35px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .navigation .logo p .santa-o {
     max-width: 27px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .navigation .logo p .santa-o {
     max-width: 30px;
   }
@@ -264,13 +260,13 @@ header {
   width: 20px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .navigation .menu-btn {
     display: block;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .navigation .menu-btn {
     display: block;
   }
@@ -328,13 +324,13 @@ header {
   padding: 0 0.5rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .desktop-menu {
     display: none;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .desktop-menu {
     display: none;
   }
@@ -376,13 +372,13 @@ header {
   text-align: center;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .hero .hero-text {
     font-size: 20px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .hero .hero-text {
     font-size: 22px;
   }
@@ -449,13 +445,13 @@ header {
   font-size: 22px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .new-stuff-list .new-stuff-details .title {
     font-size: 18px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .new-stuff-list .new-stuff-details .title {
     font-size: 20px;
   }
@@ -467,13 +463,13 @@ header {
   font-size: 18px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .new-stuff-list .new-stuff-details .description {
     font-size: 15px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .new-stuff-list .new-stuff-details .description {
     font-size: 17px;
   }
@@ -493,13 +489,13 @@ header {
   max-width: 132px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .new-stuff-list .new-stuff-details a {
     font-size: 15px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .new-stuff-list .new-stuff-details a {
     font-size: 16px;
   }
@@ -514,13 +510,13 @@ header {
   padding: 2rem 1rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .playlists_page {
     padding: 2rem 0.4rem;
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .playlists_page {
     padding: 2rem 0.6rem;
   }
@@ -534,13 +530,13 @@ header {
   text-shadow: -4px -3px 0 #000;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .playlists_page .playlists_page-title {
     font-size: 26px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .playlists_page .playlists_page-title {
     font-size: 35px;
   }
@@ -561,7 +557,7 @@ header {
   list-style: none;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .apple-music-playlists ul,
   .spotify-music-playlists ul {
     display: -webkit-box;
@@ -572,7 +568,7 @@ header {
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .apple-music-playlists ul,
   .spotify-music-playlists ul {
     display: -webkit-box;
@@ -624,14 +620,14 @@ header {
   margin: 1rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .playlist {
     padding: 1rem 0.3rem;
     margin: 0.3rem;
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .playlist {
     padding: 1rem 0.7rem;
     margin: 0.5rem;
@@ -642,7 +638,7 @@ header {
   max-width: 50px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .playlist .play-btn img {
     max-width: 40px;
   }
@@ -653,7 +649,7 @@ header {
   margin: auto 0.2rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .playlist .playlist-details .playlist-name {
     font-size: 17px;
   }
@@ -678,13 +674,13 @@ header {
   margin: 2rem 1rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .team_page .team_page-title {
     font-size: 25px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .team_page .team_page-title {
     font-size: 30px;
   }
@@ -699,7 +695,7 @@ header {
   margin: 2rem 0;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -709,7 +705,7 @@ header {
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .team {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -733,7 +729,7 @@ header {
   margin: 1.5rem;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .team .team-member {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -743,7 +739,7 @@ header {
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .team .team-member {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -761,13 +757,13 @@ header {
   max-width: 130px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .team .member-icon img {
     max-width: 100px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 549px) {
+@media (min-width: 360.5px) and (max-width: 550px) {
   .team .member-icon img {
     max-width: 100px;
   }
@@ -821,13 +817,13 @@ header {
   margin: 2rem auto;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .shows-page h2 {
     font-size: 30px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .shows-page h2 {
     font-size: 35px;
   }
@@ -839,13 +835,13 @@ header {
   font-size: 20px;
 }
 
-@media (max-width: 359px) {
+@media (max-width: 360px) {
   .shows-page .other-videos-btn {
     font-size: 16px;
   }
 }
 
-@media (min-width: 361px) and (max-width: 767px) {
+@media (min-width: 360.5px) and (max-width: 799.5px) {
   .shows-page .other-videos-btn {
     font-size: 18px;
   }
