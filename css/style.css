@@ -793,6 +793,7 @@ header {
 .team .team-member-socials .twitter-link,
 .team .team-member-socials .ig-link {
   margin: 0 0.5rem;
+  text-decoration: none;
 }
 
 .team .team-member-socials .twitter-link:hover img,
